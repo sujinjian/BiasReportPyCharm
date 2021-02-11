@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<title>The Data</title>
+</head>
+<body>
+    //Testing Testing
+    <script>
+        //if ({{ g.user.id }}== 1){dataPath = "static/2Days.csv"}
+        //if ({{ g.user.id }}== 2){dataPath = "static/CensusOutput.csv"}
+        //d3.csv(dataPath, function(data){
+        //    console.log(data);
+        })
+    </script>
+<div class=page>
+  <h1>Data Tables</h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>
